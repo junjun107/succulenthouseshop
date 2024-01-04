@@ -4,7 +4,8 @@
   "info": {
     "singularName": "item",
     "pluralName": "items",
-    "displayName": "item"
+    "displayName": "item",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,15 +22,15 @@
       "required": true
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     },
     "shortDescription": {
       "type": "richtext",
@@ -41,7 +42,7 @@
     "category": {
       "type": "enumeration",
       "enum": [
-        "newArrival",
+        "newArrivals",
         "bestSellers",
         "topRated"
       ]

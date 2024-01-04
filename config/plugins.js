@@ -10,8 +10,20 @@ module.exports = ({ env }) => ({
       },
       actionOptions: {
         upload: {},
-        uploadStream: {folder: env("CLOUDINARY_FOLDER", "") },
+        uploadStream: { folder: env("CLOUDINARY_FOLDER", "") },
         delete: {},
+      },
+    },
+  },
+  graphql: {
+    config: {
+      endpoint: "/graphql",
+      shadowCRUD: true,
+      playgroundAlways: false,
+      depthLimit: 10,
+      amountLimit: 100,
+      apolloServer: {
+        tracing: false,
       },
     },
   },
